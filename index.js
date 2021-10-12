@@ -4,4 +4,9 @@ const record = [
     {year: "2016", result: "N/A"}
     
   ]
- const superbowlWin = record.find(year => year === 2017)
+ const superbowlWin = record => {
+     const result = record.find(record => record.result === "W")
+     return result? result.year : undefined
+ }
+
+ 
